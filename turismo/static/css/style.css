@@ -1,0 +1,57 @@
+.nav-top{
+    background-color:orange !important;
+}
+.nav-link{
+    color:#593959!important;
+    background-color: orange !important;
+    margin: 0.3em !important;
+    border-radius: 0.3em !important;
+    font-weight: bold !important;
+}
+body{
+    background-color:#defdda!important;
+}
+.btn-primary{
+    color:#593959 !important;
+    background-color:orange !important;
+    font-weight:bold !important;
+    border-radius:0.3em !important;
+    border-color:aquamarine !important;
+}
+footer{
+    background-color:orange !important;
+    padding:1em;
+    color:#593959!important;
+    text-align:center !important;
+    font-weight: bold !important;
+    border-radius: 0.3em !important;
+}
+.divisao{
+    background-color:orange !important;
+    text-align:center !important;
+    color:#593959 !important;
+    padding: 2em !important;
+
+}
+.sec-pacotes{
+    margin-left:10% !important;
+    margin-right:10% !important;
+    justify-content:center !important;
+    margin-bottom:1% !important;
+}
+.card{
+    padding: 1% !important;
+    margin: 0% 1% 1% !important;
+}
+.card-p{
+    text-align:justify !important;
+
+}
+.card-h4{
+    color: #593959;
+}
+.sec-contato{
+    margin-bottom:10% !important;
+    margin-left:10% !important;
+    margin-right:10% !important;
+}
