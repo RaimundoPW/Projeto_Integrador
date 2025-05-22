@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from .models import PacoteTuristico, Contato
 from django.contrib import messages
 
+
 def inicioSite(request):
     pacotes = PacoteTuristico.objects.all()
 
@@ -23,14 +24,18 @@ def inicioSite(request):
             send_mail(
                 subject=f'Nova mensagem de {nome}',
                 message=f'Nome: {nome}\nEmail: {email}\n\nMensagem:\n{mensagem}',
-                from_email='seuemail@gmail.com',
+                from_email='seuemail@gmail.com',  # Coloque um e-mail válido configurado no Django
                 recipient_list=['raimundodasilvasudario@gmail.com'],
                 fail_silently=False,
             )
 
             messages.success(request, 'Mensagem enviada com sucesso!')
-            return redirect('pagina_de_sucesso')  # Ajuste para a sua URL de sucesso
+            return redirect('pagina_de_sucesso')
         else:
             messages.error(request, 'Por favor, preencha todos os campos.')
 
     return render(request, 'turismo/index.html', {'pacotes': pacotes})
+
+
+def pagina_de_sucesso(request):
+    return render(request, 'turismo/sucesso.html')
